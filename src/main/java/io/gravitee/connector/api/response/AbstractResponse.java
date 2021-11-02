@@ -27,6 +27,7 @@ public abstract class AbstractResponse implements Response {
 
     protected Handler<Buffer> bodyHandler;
     protected Handler<Void> endHandler;
+    protected Handler<Void> cancelHandler;
 
     @Override
     public Response bodyHandler(Handler<Buffer> bodyHandler) {
@@ -46,5 +47,22 @@ public abstract class AbstractResponse implements Response {
 
     public Handler<Void> endHandler() {
         return this.endHandler;
+    }
+
+    @Override
+    public Response cancelHandler(Handler<Void> cancelHandler) {
+        this.cancelHandler = cancelHandler;
+        return this;
+    }
+
+    public Handler<Void> cancelHandler() {
+        return this.cancelHandler;
+    }
+
+    @Override
+    public void cancel() {
+        if (cancelHandler != null) {
+            this.cancelHandler.handle(null);
+        }
     }
 }
