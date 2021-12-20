@@ -15,9 +15,10 @@
  */
 package io.gravitee.connector.api.response;
 
-import io.gravitee.common.http.HttpHeaders;
 import io.gravitee.common.http.HttpHeadersValues;
 import io.gravitee.gateway.api.buffer.Buffer;
+import io.gravitee.gateway.api.http.HttpHeaderNames;
+import io.gravitee.gateway.api.http.HttpHeaders;
 import io.gravitee.gateway.api.stream.ReadStream;
 
 /**
@@ -26,7 +27,7 @@ import io.gravitee.gateway.api.stream.ReadStream;
  */
 public class StatusResponse extends AbstractResponse {
 
-    private final HttpHeaders httpHeaders = new HttpHeaders();
+    private final HttpHeaders httpHeaders = HttpHeaders.create();
 
     private final int statusCode;
     private String reason;
@@ -34,13 +35,13 @@ public class StatusResponse extends AbstractResponse {
     public StatusResponse(int statusCode) {
         this.statusCode = statusCode;
         this.reason = null;
-        httpHeaders.set(HttpHeaders.CONNECTION, HttpHeadersValues.CONNECTION_CLOSE);
+        httpHeaders.set(HttpHeaderNames.CONNECTION, HttpHeadersValues.CONNECTION_CLOSE);
     }
 
     public StatusResponse(int statusCode, String reason) {
         this(statusCode);
         this.reason = reason;
-        httpHeaders.set(HttpHeaders.CONNECTION, HttpHeadersValues.CONNECTION_CLOSE);
+        httpHeaders.set(HttpHeaderNames.CONNECTION, HttpHeadersValues.CONNECTION_CLOSE);
     }
 
     @Override
