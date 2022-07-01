@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/gravitee-io/gravitee-connector-api/compare/1.1.1...1.1.2) (2022-07-01)
+
+
+### Bug Fixes
+
+* bump gateway-api to 1.32.3 ([213340a](https://github.com/gravitee-io/gravitee-connector-api/commit/213340a5c0bb7f87d5f01d15149a64b065e7e046)), closes [gravitee-io/issues#7930](https://github.com/gravitee-io/issues/issues/7930)
+
 ## [1.1.1](https://github.com/gravitee-io/gravitee-connector-api/compare/1.1.0...1.1.1) (2022-04-26)
 
 
