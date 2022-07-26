@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/gravitee-io/gravitee-connector-api/compare/1.1.3...1.1.4) (2022-07-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.gravitee.common:gravitee-common to v1.27.0 ([11d8561](https://github.com/gravitee-io/gravitee-connector-api/commit/11d8561313d23b4daec5f263478d9647a452c680))
+
 ## [1.1.3](https://github.com/gravitee-io/gravitee-connector-api/compare/1.1.2...1.1.3) (2022-07-26)
 
 
