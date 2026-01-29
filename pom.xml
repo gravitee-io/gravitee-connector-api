@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (C) 2015 The Gravitee team (http://gravitee.io)
+    Copyright © 2015 The Gravitee team (http://gravitee.io)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-            http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
@@ -24,7 +24,7 @@
     <parent>
         <groupId>io.gravitee</groupId>
         <artifactId>gravitee-parent</artifactId>
-        <version>20.5</version>
+        <version>23.5.0</version>
     </parent>
 
     <groupId>io.gravitee.connector</groupId>
@@ -34,10 +34,10 @@
     <name>Gravitee.io - Connector - API</name>
 
     <properties>
-        <gravitee-bom.version>1.5</gravitee-bom.version>
-        <gravitee-common.version>1.27.0</gravitee-common.version>
-        <gravitee-gateway-api.version>1.32.4</gravitee-gateway-api.version>
-        <gravitee-node-api.version>1.27.0</gravitee-node-api.version>
+        <gravitee-bom.version>9.0.0-beta.2</gravitee-bom.version>
+        <gravitee-common.version>5.0.0-beta.1</gravitee-common.version>
+        <gravitee-gateway-api.version>5.0.0-beta.2</gravitee-gateway-api.version>
+        <gravitee-node-api.version>8.0.0-beta.2</gravitee-node-api.version>
     </properties>
 
     <dependencyManagement>
@@ -89,26 +89,5 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
-
-        <plugins>
-            <plugin>
-                <groupId>com.hubspot.maven.plugins</groupId>
-                <artifactId>prettier-maven-plugin</artifactId>
-                <version>0.22</version>
-                <configuration>
-                    <nodeVersion>12.13.0</nodeVersion>
-                    <prettierJavaVersion>1.6.1</prettierJavaVersion>
-                    <skip>${skipTests}</skip>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
     </build>
 </project>
