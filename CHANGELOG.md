@@ -1,3 +1,10 @@
+# [2.0.0-beta.2](https://github.com/gravitee-io/gravitee-connector-api/compare/2.0.0-beta.1...2.0.0-beta.2) (2026-03-09)
+
+
+### Bug Fixes
+
+* ci pattern not up to date ([b992e25](https://github.com/gravitee-io/gravitee-connector-api/commit/b992e25f3aad4e43635b29c35962391fc3f25d6e))
+
 # [2.0.0-beta.1](https://github.com/gravitee-io/gravitee-connector-api/compare/1.1.5...2.0.0-beta.1) (2026-03-09)
 
 
