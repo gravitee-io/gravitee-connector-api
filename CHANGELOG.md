@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/gravitee-io/gravitee-connector-api/compare/1.1.5...2.0.0) (2026-06-17)
+
+
+### Bug Fixes
+
+* ci pattern not up to date ([6271043](https://github.com/gravitee-io/gravitee-connector-api/commit/6271043a9fc7221c30353b45f2706393958c462e))
+* update gravitee orb ([27f982c](https://github.com/gravitee-io/gravitee-connector-api/commit/27f982c98e5e4878e63b5caccce3fd68271c5a53))
+
+
+### Features
+
+* upgrade to Vert.x 5 ([7478827](https://github.com/gravitee-io/gravitee-connector-api/commit/7478827f825e6c364cf0de63ba47f29c04e24f84))
+
+
+### BREAKING CHANGES
+
+* upgrade to Vert.x 5
+
 ## [1.1.5](https://github.com/gravitee-io/gravitee-connector-api/compare/1.1.4...1.1.5) (2022-11-02)
 
 
